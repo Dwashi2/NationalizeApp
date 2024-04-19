@@ -16,6 +16,11 @@
 		564126C92BD2F8140065605A /* NationalizeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564126C82BD2F8140065605A /* NationalizeAppTests.swift */; };
 		564126D32BD2F8140065605A /* NationalizeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564126D22BD2F8140065605A /* NationalizeAppUITests.swift */; };
 		564126D52BD2F8140065605A /* NationalizeAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564126D42BD2F8140065605A /* NationalizeAppUITestsLaunchTests.swift */; };
+		564126E62BD2F85C0065605A /* NationalizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564126E52BD2F85C0065605A /* NationalizeViewController.swift */; };
+		564126E82BD2F8760065605A /* NationalizeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564126E72BD2F8760065605A /* NationalizeData.swift */; };
+		564126EA2BD2F95F0065605A /* NationalizeDataApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564126E92BD2F95F0065605A /* NationalizeDataApiManager.swift */; };
+		564126EC2BD2F9780065605A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564126EB2BD2F9780065605A /* Constants.swift */; };
+		564126EE2BD2FB720065605A /* NationalizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564126ED2BD2FB720065605A /* NationalizeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		564126CE2BD2F8140065605A /* NationalizeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NationalizeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		564126D22BD2F8140065605A /* NationalizeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalizeAppUITests.swift; sourceTree = "<group>"; };
 		564126D42BD2F8140065605A /* NationalizeAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalizeAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		564126E52BD2F85C0065605A /* NationalizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalizeViewController.swift; sourceTree = "<group>"; };
+		564126E72BD2F8760065605A /* NationalizeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalizeData.swift; sourceTree = "<group>"; };
+		564126E92BD2F95F0065605A /* NationalizeDataApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalizeDataApiManager.swift; sourceTree = "<group>"; };
+		564126EB2BD2F9780065605A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		564126ED2BD2FB720065605A /* NationalizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationalizeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,10 @@
 		564126B02BD2F8130065605A /* NationalizeApp */ = {
 			isa = PBXGroup;
 			children = (
+				564126E42BD2F8490065605A /* Commons */,
+				564126E32BD2F8410065605A /* ViewModel */,
+				564126E22BD2F83B0065605A /* View */,
+				564126E12BD2F8350065605A /* Model */,
 				564126B12BD2F8130065605A /* AppDelegate.swift */,
 				564126B32BD2F8130065605A /* SceneDelegate.swift */,
 				564126B52BD2F8130065605A /* ViewController.swift */,
@@ -125,6 +139,39 @@
 				564126D42BD2F8140065605A /* NationalizeAppUITestsLaunchTests.swift */,
 			);
 			path = NationalizeAppUITests;
+			sourceTree = "<group>";
+		};
+		564126E12BD2F8350065605A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				564126E72BD2F8760065605A /* NationalizeData.swift */,
+				564126E92BD2F95F0065605A /* NationalizeDataApiManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		564126E22BD2F83B0065605A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				564126ED2BD2FB720065605A /* NationalizeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		564126E32BD2F8410065605A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				564126E52BD2F85C0065605A /* NationalizeViewController.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		564126E42BD2F8490065605A /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				564126EB2BD2F9780065605A /* Constants.swift */,
+			);
+			path = Commons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +306,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				564126B62BD2F8130065605A /* ViewController.swift in Sources */,
+				564126EE2BD2FB720065605A /* NationalizeView.swift in Sources */,
+				564126E82BD2F8760065605A /* NationalizeData.swift in Sources */,
 				564126B22BD2F8130065605A /* AppDelegate.swift in Sources */,
+				564126EA2BD2F95F0065605A /* NationalizeDataApiManager.swift in Sources */,
+				564126EC2BD2F9780065605A /* Constants.swift in Sources */,
 				564126B42BD2F8130065605A /* SceneDelegate.swift in Sources */,
+				564126E62BD2F85C0065605A /* NationalizeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
